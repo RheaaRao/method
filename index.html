@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Method Presentation - before/after</title>
+  <style>
+  h1{ font-family:monospace; }
+  </style>
+</head>
+
+<body>
+
+  <h1>Method: before/after</h1>
+
+  <p> The Animal Care Center of NYC said they only euthanize animals that have been consistently sick with no signs of recovery or animals that are a threat to other humans or animals  </p>
+  <p id="mercy"> A representative said that they don't euthanize animals based on space. In fact, they take in all animals in different states of being even if they have space issues. Very few organizations in this country do this. </p>
+  <p class="repeat"> This method doesn't look so impressive in a small project. But it is useful to add things when you have something massive and perhaps want to repeat things. You can be smart and use classes  </p>
+  <p class = "repeat"> I've been looking at pictures of dogs all weekend. I really miss canine love. Not to distract you from before/after but everything in bold is what I dynamically added. </p>
+  <p> Annoyed? Okay, I'll stop. Sayanora. Happy coding and if you have a dog, share the love. </p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#mercy").before("<b> But according to the Comptrollers report, ACC of NYC euthanizes animals that have not been adopted within a year </b>");
+    $("#mercy").after ("<b> Access what you read but you volunteer. But please adopt! </b>");
+    $(".repeat").after("<b> Like this </b>");
+  });
+  </script>
+
+</body>
+
+</html>
+
